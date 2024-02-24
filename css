@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
+body {
+    font-family: 'Bungee Spice', sans-serif;
+    background-color: blueviolet;
+}
+
+
+
+
+.titulo {
+    color:yellowgreen;
+    font-size: 50px;
+    width: 500px;
+    height: 100px;
+    font-family: 'Bungee Spice', sans-serif;
+}
+
+
+.subtitulo {
+    display: flex;    
+    gap: 10px;
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#boton-mascota {
+    border-radius: 20px;
+    font-family: 'Bungee Spice', sans-serif;
+    background: green ;
+}
+
+.tarjetas, .tarjetas-ataques {
+    display: flex;    
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+    width: 137px;
+    height: 100px;
+    background: firebrick;
+    padding: 10px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta-de-mokepon img {
+    width: 36px;
+}
+
+input {
+    display: none;
+}
+
+
+input:checked + label {
+    background-color: black;
+    }
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    background-color: blue;
+    padding: 10px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+#mensajes {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#boton-reiniciar {
+    border: none;
+    color: brown;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+}
+
+#vidas-jugador, #vidas-enemigo {
+    font-size: 32px;
+    margin-bottom: 0;
+} 
+
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 520px) {
+    .tarjetas, .tarjetas-ataques {
+        flex-direction: column;
+    } 
+}
